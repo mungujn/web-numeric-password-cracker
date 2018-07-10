@@ -12,12 +12,12 @@ class PasswordTester:
         self.sort()
 
     def recordTriedPassword(self, password):
-        """records a password that has been tried and failed, also appends nelne"""
+        """records a password that has been tried and failed, also appends new line"""
         Filer.appendItemToFile(password, self.tried)
 
     def checkIfPasswordTried(self, password, lst):
         """Checks if the particular password had been tried already"""
-        # this implementation is inefficient for now since i doubt the tried keys will be in alphabetic order
+        # read tried passwords
         if lst is None:
             with open('tried.txt') as f:
                 lst = f.readlines()
