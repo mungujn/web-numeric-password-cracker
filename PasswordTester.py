@@ -21,7 +21,7 @@ class PasswordTester:
         if lst is None:
             with open('tried.txt') as f:
                 lst = f.readlines()
-            # you may also want to remove whitespace characters like `\n` at the end of each line
+            # may also want to remove whitespace characters like `\n` at the end of each line
             lst = [x.strip() for x in lst]
 
         # if len(lst) > 1:

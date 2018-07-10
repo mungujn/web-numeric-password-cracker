@@ -9,7 +9,7 @@ def passwordStartsWithZero(password):
     return False
 
 tester = PasswordTester()
-std_number = 214001497 # besufekads is 211002958
+student_number = 0 # student number goes here, like is 209002958
 l = Generator.generate(1234567890, 5)
 l = reversed(l)
 for password in l:
