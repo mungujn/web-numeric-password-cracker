@@ -1,4 +1,5 @@
 # Numeric password cracker
+
 A python 2.7 program for cracking a numeric password on a website
 
 I wrote this back in 2017 after losing my password to my universitys online registration site.
