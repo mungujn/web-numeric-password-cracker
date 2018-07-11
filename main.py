@@ -9,7 +9,7 @@ def passwordStartsWithZero(password):
     return False
 
 tester = PasswordTester()
-student_number = 0 # student number goes here, like is 209002958
+student_number = 0 # student number goes here, e.g 209002958
 l = Generator.generate(1234567890, 5)
 l = reversed(l)
 for password in l:
@@ -20,10 +20,10 @@ for password in l:
     if tried:
         print "Password " + str(password) + " Already tried"
     else:
-        found = tester.testPassword(std_number, password)
+        found = tester.testPassword(student_number, password)
         if found:
-            if tester.confirmPasswordWorked(std_number, password):
-                tester.saveWorkedPassword(std_number, password)
+            if tester.confirmPasswordWorked(student_number, password):
+                tester.saveWorkedPassword(student_number, password)
                 raw_input("Password Found as " + str(password) + " Enter anything exit")
 
 raw_input("Enter anything to exit")
